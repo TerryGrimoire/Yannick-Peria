@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="flex justify-between navbar">
-      <Link to="/">Accueil</Link>
-      <Link to="/Services">Services</Link>
-      <Link to="/Tarifs">Tarifs</Link>
-      <Link to="/Contact">Contact</Link>
+      <Link to="/Bio">BIO</Link>
+      <Link to="/Peintures">PEINTURES</Link>
+      <Link to="/Musiques">MUSIQUES</Link>
+      <Link to="/Contact">CONTACT</Link>
     </nav>
   );
 }
