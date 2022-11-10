@@ -12,8 +12,8 @@ import "./App.css";
 
 function App() {
   const helmet = {
-    title: "Change Title",
-    href: "https://changehref.com",
+    title: "Yannick Peria",
+    href: "https://yannickperia.com",
     description: "Change description",
   };
   return (

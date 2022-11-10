@@ -16,8 +16,8 @@ function Image({ title }) {
   */
 
   const landingData = {
-    h2: "Belle phrase d'accroche",
-    alt: "decription de l'image",
+    h2: "Artiste Peintre & Chanteur ",
+    alt: "Photo de Yannick Peria",
   };
   return (
     <section className="landing_page relative">
