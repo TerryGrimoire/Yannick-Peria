@@ -5,7 +5,7 @@ import yannick from "../../../assets/yannick.png";
 function About() {
   return (
     <section className="flex-col justify-evenly align-center h100vh dark about">
-      <h3>A propos de Yannick</h3>
+      <h3>À PROPOS DE YANNICK</h3>
       <img src={yannick} alt="yannick en portrait" className="yannick" />
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, labore
@@ -16,7 +16,9 @@ function About() {
         laborum!
       </p>
       <Link to="/Bio">
-        <button type="button">En savoir plus</button>
+        <button type="button" className="button_style">
+          En savoir plus
+        </button>
       </Link>
     </section>
   );

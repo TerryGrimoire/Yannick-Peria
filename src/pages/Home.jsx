@@ -2,11 +2,14 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Landing from "../components/Home/LandingPage/Landing";
 import About from "../components/Home/sections/About";
+import Oeuvres from "../components/Home/sections/Oeuvres";
+import Musiques from "../components/Home/sections/Musiques";
 
 export default function Home({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <main className="flex-col main_container">
       <Helmet>
@@ -26,6 +29,8 @@ export default function Home({ helmet }) {
 
       <Landing title={helmet.title} />
       <About />
+      <Oeuvres />
+      <Musiques />
     </main>
   );
 }

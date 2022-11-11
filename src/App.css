@@ -24,10 +24,16 @@
   background-color: var(--main-bg-color);
   font-family: var(--font-text);
   overflow-x: hidden;
+  line-height: 1.5;
 }
 
 h1, h2 {
   font-family: var(--font-title);
+}
+
+h3 {
+margin: 2rem;
+text-align: center;
 }
 
 a {
@@ -92,13 +98,7 @@ section {
   position: relative;
 }
 
-.button_style {
-  border: none;
-  box-shadow: var(--box-shadow);
-  padding: 1rem;
-  border-radius: 0.75rem;
-  font-weight: bold;
-}
+
 
 .margin1r0 {
   margin: 1rem 0;
@@ -192,7 +192,7 @@ height: 2rem;
   text-align: right;
   line-height: 1.2;
   overflow: visible;
-} 
+}
 
 .landing > h2 {
   font-size: 1rem;
@@ -218,12 +218,21 @@ margin-right: -2rem;
   padding: 0 2rem;
 }
 
-.about button {
+.button_style {
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
   background-color: var(--third-color);
   color: var(--secondary-bg-color);
   font-weight: bolder;
+  border: none;
+}
+
+.oeuvre_image {
+  width: 100%;
+}
+
+.oeuvres_article {
+  padding: 0 2rem;
 }
 /************* LANDING IMAGE *************/
 .landing_page {
@@ -260,6 +269,16 @@ margin-right: -2rem;
     opacity: 60%;
   }
 
+.oeuvres, .oeuvres *, .musiques, .musiques * {
+  overflow: visible;
+}
+
+.oeuvre_image {
+  padding: 1rem 1rem;
+  height: 50vh;
+  width: auto;
+  border-radius: 1.5rem;
+}
 
 /********************************************************************* Page 1 *********************************************************************/ 
 
