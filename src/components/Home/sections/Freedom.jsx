@@ -8,7 +8,7 @@ function Oueuvres() {
 
   const responsive = {
     0: {
-      items: 2,
+      items: 4,
     },
     1024: {
       items: 10,
