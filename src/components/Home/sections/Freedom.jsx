@@ -23,7 +23,7 @@ function Oueuvres() {
       onDragStart={handleDragStart}
       className="flex-col align-center justify-content"
     >
-      <h3>{el.name}</h3>
+      <small>{el.name}</small>
       <img src={el.src} alt={el.alt} className="freedom_image" />
     </a>
   ));
