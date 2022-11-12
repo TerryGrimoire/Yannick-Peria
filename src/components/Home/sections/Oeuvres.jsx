@@ -1,32 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
 import oeuvresData from "../../../data/oeuvresData";
 
 function Oueuvres() {
-  const handleDragStart = (e) => e.preventDefault();
-
-  const items = oeuvresData.map((oeuvre) => (
-    <img
-      src={oeuvre.image}
-      alt={oeuvre.alt}
-      onDragStart={handleDragStart}
-      role="presentation"
-      className="oeuvre_image"
-    />
-  ));
-
-  const responsive = {
-    0: {
-      items: 1,
-    },
-    1024: {
-      items: 10,
-    },
-  };
   return (
-    <section className="flex-col justify-evenly align-center h100vh oeuvres">
+    <section className="flex-col justify-evenly align-center oeuvres">
       <h3>ARTISTE PEINTRE</h3>
       <article className="flex-col oeuvres_article">
         <h4>LA KOUR</h4>
@@ -36,17 +14,13 @@ function Oueuvres() {
           accusantium assumenda repellat unde pariatur explicabo perferendis.
         </p>
       </article>
-      <AliceCarousel
-        autoPlay
-        disableButtonsControls
-        disableDotsControls
-        disableSlideInfo
-        infinite
-        animationDuration="6000"
-        mouseTracking
-        responsive={responsive}
-        items={items}
-      />
+      <div className="oeuvre_image_container">
+        {oeuvresData
+          .filter((oeuvre) => oeuvre.id < 7)
+          .map((o) => (
+            <img src={o.image} alt={o.alt} className="oeuvre_image" />
+          ))}
+      </div>
       <Link to="/Peintures">
         <button type="button" className="button_style">
           Découvrir LA KOUR

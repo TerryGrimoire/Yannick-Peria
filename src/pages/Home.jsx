@@ -4,6 +4,7 @@ import Landing from "../components/Home/LandingPage/Landing";
 import About from "../components/Home/sections/About";
 import Oeuvres from "../components/Home/sections/Oeuvres";
 import Musiques from "../components/Home/sections/Musiques";
+import Freedom from "../components/Home/sections/Freedom";
 
 export default function Home({ helmet }) {
   useEffect(() => {
@@ -31,6 +32,7 @@ export default function Home({ helmet }) {
       <About />
       <Oeuvres />
       <Musiques />
+      <Freedom />
     </main>
   );
 }

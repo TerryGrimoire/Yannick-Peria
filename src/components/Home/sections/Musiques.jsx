@@ -7,13 +7,18 @@ import musiquesData from "../../../data/musiquesData";
 function Oueuvres() {
   const handleDragStart = (e) => e.preventDefault();
 
-  const items = musiquesData.map((oeuvre) => (
-    <img
-      src={oeuvre.image}
-      alt={oeuvre.alt}
+  const items = musiquesData.map((musique) => (
+    <iframe
+      width="560"
+      height="315"
+      src={musique.src}
+      title="YouTube video player"
+      frameBorder="0"
       onDragStart={handleDragStart}
       role="presentation"
-      className="oeuvre_image"
+      className="musiques_yt"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullScreen"
+      allowFullScreen
     />
   ));
 
@@ -26,7 +31,7 @@ function Oueuvres() {
     },
   };
   return (
-    <section className="flex-col justify-evenly align-center h100vh musiques dark">
+    <section className="flex-col justify-evenly align-center musiques dark">
       <h3>MUSIQUES</h3>
       <article className="flex-col oeuvres_article">
         <h4>AUTEUR, COMPOSITEUR, INTERPRÈTE</h4>
@@ -38,7 +43,6 @@ function Oueuvres() {
       </article>
       <AliceCarousel
         autoPlay
-        disableButtonsControls
         disableDotsControls
         disableSlideInfo
         infinite
@@ -47,7 +51,7 @@ function Oueuvres() {
         responsive={responsive}
         items={items}
       />
-      <Link to="/Bio">
+      <Link to="/Musiques">
         <button type="button" className="button_style">
           En savoir plus
         </button>

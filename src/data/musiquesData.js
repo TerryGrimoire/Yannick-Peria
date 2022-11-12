@@ -1,64 +1,38 @@
-import oeuvre1 from "../assets/m-oeuvre1.jpg";
-import oeuvre2 from "../assets/m-oeuvre2.jpg";
-import oeuvre3 from "../assets/m-oeuvre3.jpg";
-import oeuvre4 from "../assets/m-oeuvre4.jpg";
-import oeuvre5 from "../assets/m-oeuvre5.jpg";
-import oeuvre6 from "../assets/m-oeuvre6.jpg";
-import oeuvre7 from "../assets/m-oeuvre7.jpg";
-import oeuvre8 from "../assets/m-oeuvre8.jpg";
-import oeuvre9 from "../assets/m-oeuvre9.jpg";
-import oeuvre10 from "../assets/m-oeuvre10.jpg";
-
 const musiquesData = [
   {
     id: 1,
-    image: oeuvre1,
-    alt: "text ",
+    src: "https://www.youtube.com/embed/-B04uMbM9RQ",
+    title: "Sé mon l'aniversèr - Yannick",
   },
   {
-    id: 1,
-    image: oeuvre2,
-    alt: "text ",
+    id: 2,
+    src: "https://www.youtube.com/embed/UYBoknDxp1A",
+    title: "OUSS - Yannick & Brandon",
   },
   {
-    id: 1,
-    image: oeuvre3,
-    alt: "text ",
+    id: 3,
+    src: "https://www.youtube.com/embed/N4t51mWL3JU",
+    title: "FOUT BORDEL - Yannick & Brandon",
   },
   {
-    id: 1,
-    image: oeuvre4,
-    alt: "text ",
+    id: 4,
+    src: "https://www.youtube.com/embed/VP_ctFaqA_o",
+    title: "Pess pitin - Yannick",
   },
   {
-    id: 1,
-    image: oeuvre5,
-    alt: "text ",
+    id: 5,
+    src: "https://www.youtube.com/embed/YujM-9r25tA",
+    title: "La kour - Yannick & Brandon",
   },
   {
-    id: 1,
-    image: oeuvre6,
-    alt: "text ",
+    id: 6,
+    src: "https://www.youtube.com/embed/2vZvtRycPoU",
+    title: "An pliss - Yannick & Brandon",
   },
   {
-    id: 1,
-    image: oeuvre7,
-    alt: "text ",
-  },
-  {
-    id: 1,
-    image: oeuvre8,
-    alt: "text ",
-  },
-  {
-    id: 1,
-    image: oeuvre9,
-    alt: "text ",
-  },
-  {
-    id: 1,
-    image: oeuvre10,
-    alt: "text ",
+    id: 7,
+    src: "https://www.youtube.com/embed/xX1zqIX9fv0",
+    title: "Confinement (reprise Comportement - Aya Nakamura)",
   },
 ];
 export default musiquesData;

@@ -16,47 +16,47 @@ const oeuvresData = [
     alt: "text ",
   },
   {
-    id: 1,
+    id: 2,
     image: oeuvre2,
     alt: "text ",
   },
   {
-    id: 1,
+    id: 3,
     image: oeuvre3,
     alt: "text ",
   },
   {
-    id: 1,
+    id: 4,
     image: oeuvre4,
     alt: "text ",
   },
   {
-    id: 1,
+    id: 5,
     image: oeuvre5,
     alt: "text ",
   },
   {
-    id: 1,
-    image: oeuvre6,
-    alt: "text ",
-  },
-  {
-    id: 1,
-    image: oeuvre7,
-    alt: "text ",
-  },
-  {
-    id: 1,
-    image: oeuvre8,
-    alt: "text ",
-  },
-  {
-    id: 1,
+    id: 6,
     image: oeuvre9,
     alt: "text ",
   },
   {
-    id: 1,
+    id: 7,
+    image: oeuvre7,
+    alt: "text ",
+  },
+  {
+    id: 8,
+    image: oeuvre8,
+    alt: "text ",
+  },
+  {
+    id: 9,
+    image: oeuvre6,
+    alt: "text ",
+  },
+  {
+    id: 10,
     image: oeuvre10,
     alt: "text ",
   },
