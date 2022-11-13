@@ -16,16 +16,13 @@ function Oueuvres() {
   };
 
   const items = freedomData.map((el) => (
-    <a
-      href={el.link}
-      target="_blank"
-      rel="noreferrer"
+    <div
       onDragStart={handleDragStart}
       className="flex-col align-center justify-content"
     >
       <small>{el.name}</small>
       <img src={el.src} alt={el.alt} className="freedom_image" />
-    </a>
+    </div>
   ));
   return (
     <section className="flex-col justify-evenly align-center freedom">
