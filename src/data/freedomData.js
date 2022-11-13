@@ -34,8 +34,7 @@ const projetsData = [
   },
   {
     id: 4,
-    link: "Kult Media",
-    name: "Bungee",
+    name: "KULT Media",
     src: kult,
     alt: "Logo de Kult Media",
   },
@@ -53,7 +52,7 @@ const projetsData = [
   },
   {
     id: 5,
-    name: "Réunion la 1ère",
+    name: "Réunion 1ère",
     src: reunion1ere,
     alt: "Logo de Réunion la 1ère",
   },

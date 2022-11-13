@@ -18,7 +18,7 @@ function Oueuvres() {
   const items = freedomData.map((el) => (
     <div
       onDragStart={handleDragStart}
-      className="flex-col align-center justify-content"
+      className="flex-col align-center justify-center"
     >
       <small>{el.name}</small>
       <img src={el.src} alt={el.alt} className="freedom_image" />

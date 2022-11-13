@@ -44,6 +44,7 @@ function Oueuvres() {
       <AliceCarousel
         autoPlay
         disableDotsControls
+        disableButtonsControls
         disableSlideInfo
         infinite
         animationDuration="6000"

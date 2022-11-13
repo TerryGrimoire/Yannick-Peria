@@ -292,11 +292,19 @@ margin-right: -2rem;
 }
 iframe {
   height: 50vh;
+  border-radius: 2rem;
+}
+
+.freedom {
+  padding: 0 0 2rem;
 }
 
 .freedom_image {
 height: 3rem;
+width: 3rem;
 margin-top: 1.5rem;
+border-radius: 50%;
+border: #3b3a3a 0.25px solid;
 }
 /********************************************************************* Page 1 *********************************************************************/ 
 
