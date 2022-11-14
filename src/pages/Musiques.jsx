@@ -6,13 +6,13 @@ function Musiques({ helmet }) {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <main>
       <Helmet>
         <title> {helmet.title} | Musiques </title>
         <link rel="canonical" href={`${helmet.href}/Musiques`} />
         <meta name="description" content={helmet.description} />
       </Helmet>
-    </div>
+    </main>
   );
 }
 

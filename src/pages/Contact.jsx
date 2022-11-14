@@ -8,7 +8,7 @@ function Contact({ helmet }) {
   }, []);
   const [rdv, setRdv] = useState(true);
   return (
-    <div className="flex flex-col align-center">
+    <main className="flex flex-col align-center">
       <Helmet>
         <title> {helmet.title} | Contact </title>
         <link rel="canonical" href={`${helmet.href}/Services`} />
@@ -42,7 +42,7 @@ function Contact({ helmet }) {
           <Form />
         )}
       </section>
-    </div>
+    </main>
   );
 }
 
