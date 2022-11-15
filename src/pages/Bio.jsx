@@ -14,8 +14,8 @@ function Bio({ helmet }) {
         <link rel="canonical" href={`${helmet.href}/Bio`} />
         <meta name="description" content={helmet.description} />
       </Helmet>
+      <h1>À PROPOS DE YANNICK</h1>
       <div className="bio_top">
-        <h1>À PROPOS DE YANNICK</h1>
         <img
           src={yannick}
           alt="protrait de Yannick Peria"
@@ -61,6 +61,14 @@ function Bio({ helmet }) {
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           title="yannick video pour Mi Exist Reunion 1ere"
         />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, labore
+          saepe amet inventore cumque quae sapiente nam nulla alias, dolorum
+          aliquid. Qui cum sunt, fuga mollitia unde placeat, nobis officia,
+          pariatur reprehenderit accusantium quisquam! Nostrum iste harum minus
+          nisi nesciunt perferendis quis, quidem fugit nihil at id quam, odit
+          laborum!
+        </p>
       </section>
     </main>
   );

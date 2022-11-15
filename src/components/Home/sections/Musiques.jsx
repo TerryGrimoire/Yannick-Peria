@@ -42,13 +42,10 @@ function Oueuvres() {
         </p>
       </article>
       <AliceCarousel
-        autoPlay
         disableDotsControls
-        disableButtonsControls
-        disableSlideInfo
-        infinite
-        animationDuration="6000"
+        animationDuration="600"
         mouseTracking
+        infinite
         responsive={responsive}
         items={items}
       />

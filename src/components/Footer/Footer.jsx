@@ -10,7 +10,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer_plan">
-        <h4>Plan du site</h4>
+        <h4>Liens utiles</h4>
         <ul className="flex-col justify-evenly align-start">
           <li>
             <Link to="/">Accueil</Link>
@@ -20,9 +20,15 @@ function Footer() {
           </li>
           <li>
             <Link to="/Peintures">Peintures</Link>
-            <li>
-              <Link to="/Musiques">Musiques</Link>
-            </li>
+          </li>
+          <li>
+            <Link to="/Musiques">Musiques</Link>
+          </li>
+          <li>
+            <Link to="/Mentions">Mentions Légales</Link>
+          </li>
+          <li>
+            <Link to="/Mentions">Politique de confidentialité</Link>
           </li>
         </ul>
       </div>
@@ -58,12 +64,6 @@ function Footer() {
         </ul>
       </div>
       <div className="footer_bottom">
-        <Link to="/Mentions">
-          <small>Politique de confidentialité</small>
-        </Link>
-        <Link to="/Mentions">
-          <small className="small">Mentions Légales</small>
-        </Link>
         <small>Tous droits réservés 2022 ©</small>
       </div>
     </footer>

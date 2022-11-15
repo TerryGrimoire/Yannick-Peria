@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import Form from "../components/Contact/Form";
+import facebook from "../assets/facebook.svg";
+import youtube from "../assets/youtube.svg";
+import linkedin from "../assets/linkedin.svg";
+import tiktok from "../assets/tiktok.svg";
+import instagram from "../assets/instagram.svg";
 
 function Contact({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const [rdv, setRdv] = useState(true);
   return (
     <main className="flex flex-col align-center">
       <Helmet>
@@ -14,33 +17,45 @@ function Contact({ helmet }) {
         <link rel="canonical" href={`${helmet.href}/Services`} />
         <meta name="description" content={helmet.description} />
       </Helmet>
-      <h2>Nous joindre</h2>
+      <h1>ME CONTACTER</h1>
       <section>
-        <div className="flex justify-center margin1r0 ">
-          <button
-            type="button"
-            className="button_style margin0r1r"
-            onClick={() => setRdv(true)}
-          >
-            Prendre un rdv
-          </button>
-          <button
-            type="button"
-            className="button_style margin0r1r"
-            onClick={() => setRdv(false)}
-          >
-            Envoyer un email
-          </button>
-        </div>
-        {rdv ? (
-          <iframe
-            src="https://calendly.com/terry-grimoire/30min?month=2022-08"
-            frameBorder="0"
-            title="calendly terry grimoire"
-          />
-        ) : (
-          <Form />
-        )}
+        <ul>
+          <h2>Mes coordonnées</h2>
+          <li>☎ Par téléphone : XX.XX.XX.XX.XX</li>
+          <li>📧 Par email : xxxxxxxx@xxxxx.com</li>
+          <li>📍 Le Port, La Réunion</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Mes réseaux sociaux</h2>
+        <ul className="socialMedia_container_contact">
+          <li>
+            <a href="https://www.facebook.com/yannick.perianayagom">
+              <img src={facebook} alt="logo de Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@yannickperia">
+              <img src={tiktok} alt="logo de Tiktok" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/yannickperiastudio/">
+              <img src={instagram} alt="logo de Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UC6uwJULqffrKiihb5H3CmIg">
+              <img src={youtube} alt="logo de Youtube" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/yannick-peria-21253a1b0/">
+              <img src={linkedin} alt="logo de Linkedin" />
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
   );
