@@ -34,7 +34,7 @@ function Oueuvres() {
     <section className="flex-col justify-evenly align-center musiques dark">
       <h3>MUSIQUES</h3>
       <article className="flex-col oeuvres_article">
-        <h4>AUTEUR, COMPOSITEUR, INTERPRÈTE</h4>
+        <h4>AUTEUR ET INTERPRÈTE</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
           voluptas dolores nam voluptatum, iusto minima vitae accusamus ut
