@@ -8,12 +8,11 @@ function About() {
       <h3>À PROPOS DE YANNICK</h3>
       <img src={yannick} alt="yannick en portrait" className="yannick" />
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, labore
-        saepe amet inventore cumque quae sapiente nam nulla alias, dolorum
-        aliquid. Qui cum sunt, fuga mollitia unde placeat, nobis officia,
-        pariatur reprehenderit accusantium quisquam! Nostrum iste harum minus
-        nisi nesciunt perferendis quis, quidem fugit nihil at id quam, odit
-        laborum!
+        Yannick Peria est né en 1998 au Port où il a effectué toute sa
+        scolarité. En 2016, il est admis à l'École Supérieure d'Art de La
+        Réunion. Après une année en Erasmus à l'École Supérieure d'Art de
+        Bruxelles, il revient à La Réunion et obtient son diplôme national
+        supérieur d'expression plastique en 2021.
       </p>
       <Link to="/Bio">
         <button type="button" className="button_style">

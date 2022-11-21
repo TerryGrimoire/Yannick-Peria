@@ -9,9 +9,11 @@ function Oueuvres() {
       <article className="flex-col oeuvres_article">
         <h4>LA KOUR</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
-          voluptas dolores nam voluptatum, iusto minima vitae accusamus ut
-          accusantium assumenda repellat unde pariatur explicabo perferendis.
+          C'est pendant la période du confinement que le projet LA KOUR est né.
+          Je peins des lieux qui me sont chers, d'après des photographies que je
+          prends avec mon téléphone. Les peindre pour ne pas les perdre, pour
+          les immortaliser, pour qu'elles ne disparaissent pas dans le flot
+          d'images postées sur le net.
         </p>
       </article>
       <div className="oeuvre_image_container">

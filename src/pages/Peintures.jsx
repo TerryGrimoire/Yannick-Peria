@@ -13,7 +13,12 @@ function Peintures({ helmet }) {
   const handleDragStart = (e) => e.preventDefault();
 
   const items = OeuvresData.map((data) => (
-    <img src={data.image} alt={data.alt} onDragStart={handleDragStart} />
+    <div className="peintures_carousel">
+      <img src={data.image} alt={data.alt} onDragStart={handleDragStart} />
+      <h4>{data.title}</h4>
+      <small>{data.size}</small>
+      <small>{data.details}</small>
+    </div>
   ));
 
   const responsive = {
@@ -38,23 +43,36 @@ function Peintures({ helmet }) {
         <article>
           <h2>LA KOUR</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            dolorem maiores, in quisquam laboriosam assumenda perspiciatis ad
-            alias reprehenderit, aperiam doloribus quo voluptatibus corporis
-            provident, repellendus accusamus quaerat deleniti ab totam dicta
-            odio iste debitis quidem. Atque mollitia consectetur alias amet
-            nostrum impedit, nulla cum sequi magnam, aliquam dolores similique
-            adipisci harum quia officia, voluptatibus autem a sed at quam! Natus
-            nam maxime dolorem consequuntur molestiae accusamus, eaque eligendi
-            quia voluptas? Debitis neque culpa ex suscipit iusto iste odio velit
-            magni ratione, exercitationem laudantium voluptates inventore
-            doloremque dolorem perferendis illum eligendi quisquam eum deleniti
-            facere. Quaerat id provident assumenda nostrum obcaecati magnam
-            animi libero sed, quod autem facere explicabo et beatae fugiat minus
-            fugit qui inventore blanditiis fuga quas tenetur similique ratione.
-            Accusantium aperiam tenetur, vero sunt qui, numquam totam debitis
-            quis ab veniam, at iste natus molestiae illum blanditiis tempore
-            ducimus optio quae eum dolorum provident ipsam perferendis. Saepe?
+            La Kour désigne à l'origine le jardin. Son sens a évolué et
+            aujourd'hui La Kour est un point de rassemblement de famille, d'amis
+            proches, elle est un foyer comme la kaz mémé ou un lieuextérieur
+            comme in boutik lontan, in ron batay kok, dann fon jardin... Elle
+            est un lieu cher à ses personnes, elle les voit et les fait grandir.
+            La Kour témoigne des moments de vie partagés, des souvenirs créés
+            ensemble.
+          </p>
+          <p>
+            Le point de départ de mes peintures est la cuisine au feu de bois de
+            chez mes grand-mères. Ce lieu intime dans les familles réunionnaises
+            est celui de la transmission de la culture, des secrets de famille.
+            Elle caractérise à elle-seule le foyer, un espace réconfortant et
+            chaleureux.
+          </p>
+          <p>
+            Je peins pour témoigner de ces lieux qui fondent la mémoire intime
+            des familles réunionnaises, ces lieux voués à disparaître au profit
+            de la modernisation.
+          </p>
+          <p>
+            Le geste instinctif m'anime plus que la recherche du détail, il
+            traduit des sensations et des émotions. Les couleurs et le format
+            vont à l'essentiel : Ma palette de couleur est réduite. Le noir et
+            blanc est nostalgique, évoque le souvenir des moments disparus. Le
+            jaune est solaire et le bleu est ciel, ils apportent la vie.
+          </p>
+          <p>
+            Le choix grand format permet de se plonger dans la scène, s'immerger
+            et ressentir les émotions que je cherche à retranscrire.
           </p>
         </article>
 
@@ -73,7 +91,7 @@ function Peintures({ helmet }) {
           >
             <img src={croix} alt="croix pour fermer la page" />
           </button>
-          <div>
+          <div className="peinture_carousel_container">
             <AliceCarousel
               disableDotsControls
               animationDuration="600"

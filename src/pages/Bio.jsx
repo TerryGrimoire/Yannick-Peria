@@ -24,26 +24,22 @@ function Bio({ helmet }) {
         <article>
           <h2>Biographie</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure,
-            labore saepe amet inventore cumque quae sapiente nam nulla alias,
-            dolorum aliquid. Qui cum sunt, fuga mollitia unde placeat, nobis
-            officia, pariatur reprehenderit accusantium quisquam! Nostrum iste
-            harum minus nisi nesciunt perferendis quis, quidem fugit nihil at id
-            quam, odit laborum!
+            Yannick Peria est né en 1998 au Port où il a effectué toute sa
+            scolarité. En 2016, il est admis à l'École Supérieure d'Art de La
+            Réunion. Après une année en Erasmus à l'École Supérieure d'Art de
+            Bruxelles, il revient à La Réunion et obtient son diplôme national
+            supérieur d'expression plastique en 2021.
           </p>
         </article>
       </div>
       <section className="bio_main">
-        <h2>Mon parcours</h2>
+        <h2>PARCOURS ET RÉSIDENCES</h2>
         <div className="bio_parcours">
           {parcoursData.map((el) => (
-            <div className="flex">
-              <div className={el.classCSS} />
-              <div className="bio_parcours_content">
-                <h3>{el.title}</h3>
-                <h4>{el.date}</h4>
-                <p>{el.text}</p>
-              </div>
+            <div className={el.classCSS}>
+              <h3>{el.date}</h3>
+              <h4>{el.title}</h4>
+              <small>{el.city}</small>
             </div>
           ))}
         </div>
