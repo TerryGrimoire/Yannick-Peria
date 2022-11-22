@@ -28,6 +28,7 @@ function Oueuvres() {
           Découvrir LA KOUR
         </button>
       </Link>
+      <div className="trace_bottom" />
     </section>
   );
 }

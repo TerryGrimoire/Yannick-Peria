@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import facebook from "../../assets/facebook.svg";
 import youtube from "../../assets/youtube.svg";
 import linkedin from "../../assets/linkedin.svg";
-import tiktok from "../../assets/tiktok.svg";
+import tiktok from "../../assets/tiktok.png";
 import instagram from "../../assets/instagram.svg";
 
 function Footer() {
@@ -25,6 +25,9 @@ function Footer() {
             <Link to="/Musiques">Musiques</Link>
           </li>
           <li>
+            <Link to="/Contact">Contact</Link>
+          </li>
+          <li>
             <Link to="/Mentions">Mentions Légales</Link>
           </li>
           <li>
@@ -43,7 +46,7 @@ function Footer() {
           </li>
           <li>
             <a href="https://www.tiktok.com/@yannickperia">
-              <img src={tiktok} alt="logo de Tiktok" />
+              <img src={tiktok} alt="logo de Tiktok" className="tiktok" />
             </a>
           </li>
           <li>

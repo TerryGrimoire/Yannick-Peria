@@ -27,7 +27,7 @@ function Oueuvres() {
       items: 1,
     },
     1024: {
-      items: 10,
+      items: 1,
     },
   };
   return (
@@ -54,6 +54,7 @@ function Oueuvres() {
           En savoir plus
         </button>
       </Link>
+      <div className="trace_top" />
     </section>
   );
 }

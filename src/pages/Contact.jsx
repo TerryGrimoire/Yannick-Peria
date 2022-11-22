@@ -19,7 +19,7 @@ function Contact({ helmet }) {
       </Helmet>
       <h1>ME CONTACTER</h1>
       <section>
-        <ul>
+        <ul className="contact_coord_container">
           <h2>Mes coordonnées</h2>
           <li>☎ Par téléphone : XX.XX.XX.XX.XX</li>
           <li>📧 Par email : xxxxxxxx@xxxxx.com</li>
@@ -28,31 +28,56 @@ function Contact({ helmet }) {
       </section>
 
       <section>
-        <h2>Mes réseaux sociaux</h2>
         <ul className="socialMedia_container_contact">
+          <h2>Mes réseaux sociaux</h2>
           <li>
-            <a href="https://www.facebook.com/yannick.perianayagom">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/yannick.perianayagom"
+              rel="noreferrer"
+            >
               <img src={facebook} alt="logo de Facebook" />
+              <p>@yannick.perianayagom</p>
             </a>
           </li>
           <li>
-            <a href="https://www.tiktok.com/@yannickperia">
+            <a
+              target="_blank"
+              href="https://www.tiktok.com/@yannickperia"
+              rel="noreferrer"
+            >
               <img src={tiktok} alt="logo de Tiktok" />
+              <p>@yannickperia</p>
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/yannickperiastudio/">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/yannickperiastudio/"
+              rel="noreferrer"
+            >
               <img src={instagram} alt="logo de Instagram" />
+              <p>@yannickperiastudio</p>
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/channel/UC6uwJULqffrKiihb5H3CmIg">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UC6uwJULqffrKiihb5H3CmIg"
+              rel="noreferrer"
+            >
               <img src={youtube} alt="logo de Youtube" />
+              <p>@yannickperia5721</p>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/yannick-peria-21253a1b0/">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/yannick-peria-21253a1b0/"
+              rel="noreferrer"
+            >
               <img src={linkedin} alt="logo de Linkedin" />
+              <p>@yannick-peria</p>
             </a>
           </li>
         </ul>
