@@ -61,7 +61,7 @@ const oeuvresData = [
   {
     id: 7,
     image: oeuvre7,
-    alt: "text ",
+    alt: "text 7",
     title: "7. Confinement 2",
     size: "20x22cm",
     details: "acrylique sur papier, 2020",
@@ -85,7 +85,7 @@ const oeuvresData = [
   {
     id: 10,
     image: oeuvre10,
-    alt: "text ",
+    alt: "text 10",
     title: "10. Téléphone mémé 2",
     size: "97x97cm",
     details: "acrylique sur toile, 2022",

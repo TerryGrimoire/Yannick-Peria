@@ -494,8 +494,8 @@ margin: 2rem 0;
 .right h3 {
   text-align: right;
   margin: 1rem 0 1rem;
-  color: var(--main-bg-color);
-  background-image: url(./assets/pinceau3.png);
+  color: var(--secondary-bg-color);
+  background-image: url(./assets/pinceau4.png);
   background-repeat: no-repeat;
   background-size: 110%;
   background-position: right center;
@@ -803,6 +803,7 @@ margin: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: space-around;
 }
 .landing * {
   background-color: transparent;
@@ -826,6 +827,10 @@ margin: 2rem 0;
   padding: 0;
 }
 
+.landing img {
+  width: 20vw;
+  height: auto;
+}
 .yannick {
   width: 50vw;
   height: auto;
@@ -835,6 +840,21 @@ margin: 2rem 0;
 .about {
   min-height: 110vh;
   padding: 2rem 20vw;
+}
+
+.about .trace_bottom {
+  position: absolute;
+  transform: rotate(180deg);
+  bottom: -2rem;
+  left: -3rem;
+  height: 20vh;
+  width: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(./assets/pinceau2.png);
+  background-size: 30vh;
+  background-position: right;
+  z-index: 0;
 }
 
 .desktop_div {
@@ -848,17 +868,29 @@ margin: 2rem 0;
   font-weight: bolder;
   border: none;
 }
-
+.oeuvres .trace_bottom {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0rem;
+    height: 15vh;
+    width: 100%;
+    background-color: transparent;
+    background-repeat: repeat-x;
+    background-image: url(./assets/pinceau5.png);
+    background-size: 10%;
+    background-position: right;
+    z-index: 0;
+}
 .oeuvre_image_container {
   display: flex;
   flex-wrap:wrap ;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
 }
 
 .oeuvre_image {
-  width: 15vw;
+  width: 19vw;
   padding: 1rem 1rem;
   border-radius: 1.5rem;
 }
@@ -877,6 +909,21 @@ margin: 2rem 0;
 
 .musiques > * {
   overflow: hidden;
+}
+
+.musiques .trace_top {
+  position: absolute;
+  top: -1.5rem;
+  left: 0rem;
+  height: 25vh;
+  width: 100%;
+  background-color: transparent;
+  transform: rotate(180deg);
+  background-repeat: repeat-x;
+  background-image: url(./assets/pinceau5.png);
+  background-size: 10%;
+  background-position: right;
+  z-index: 0;
 }
 .musiques_yt {
   width: 100%;
@@ -898,5 +945,166 @@ width: 3rem;
 margin-top: 1.5rem;
 border-radius: 50%;
 border: #3b3a3a 0.25px solid;
+}
+
+/********************************************************************* Page Bio *********************************************************************/ 
+
+.page_bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 20vw;
+}
+
+.bio_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.bio_top > img {
+margin: 0rem 2rem 0 0;
+}
+
+
+.bio_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.bio_bottom * {
+  margin: 1rem 0;
+}
+
+.bio_bottom p {
+  padding: 0rem;
+}
+
+.bio_bottom iframe {
+  width: 70%;
+  height: 80vh;
+  border-radius: 0.5rem;
+}
+
+.left, .right {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.left *, .right * {
+  background-color: transparent;
+}
+
+.left {
+ text-align: left;
+ margin: 1rem 0;
+}
+
+.left h3 {
+  text-align: left;
+  margin: 1rem 0 1rem;
+  color: var(--main-bg-color);
+  background-image: url(./assets/pinceau1.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: left center;
+  height: 4rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.right {
+  text-align: right;
+  margin: 1rem 0;
+}
+
+.right h3 {
+  text-align: right;
+  margin: 1rem 0 1rem;
+  color: var(--main-bg-color);
+  background-image: url(./assets/pinceau3.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: right center;
+  height: 6rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.bio_parcours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/********************************************************************* Page Peintures *********************************************************************/ 
+
+.page_peintures{
+  padding: 2rem 20vw;
+}
+
+.peintures_img_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.peintures_img_container * {
+  background-color: inherit;
+}
+.peintures_img_container img {
+  width: 15vw;
+  padding: 1rem 0;
+}
+
+.peintures_carousel {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.peintures_carousel h4  {
+  padding: 0;
+}
+.peintures_carousel img {
+  height: 80vh;
+  width: auto;
+  margin-top: 0;
+  margin: 0 10rem 0 0;
+}
+
+/********************************************************************* Page MUSIQUES *********************************************************************/ 
+.page_musiques{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 20vw;
+  position: relative;
+}
+/********************************************************************* Page Contact *********************************************************************/ 
+.contact_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_flex section {
+  margin: 1rem 1rem;
 }
 }

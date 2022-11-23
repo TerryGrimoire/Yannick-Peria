@@ -26,7 +26,7 @@ function Peintures({ helmet }) {
       items: 1,
     },
     1024: {
-      items: 10,
+      items: 1,
     },
   };
 
@@ -45,7 +45,7 @@ function Peintures({ helmet }) {
           <p>
             La Kour désigne à l'origine le jardin. Son sens a évolué et
             aujourd'hui La Kour est un point de rassemblement de famille, d'amis
-            proches, elle est un foyer comme la kaz mémé ou un lieuextérieur
+            proches, elle est un foyer comme la kaz mémé ou un lieu extérieur
             comme in boutik lontan, in ron batay kok, dann fon jardin... Elle
             est un lieu cher à ses personnes, elle les voit et les fait grandir.
             La Kour témoigne des moments de vie partagés, des souvenirs créés
