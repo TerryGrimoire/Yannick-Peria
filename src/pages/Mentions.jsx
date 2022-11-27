@@ -6,15 +6,15 @@ function Mentions() {
   }, []);
 
   const information = {
-    siteLink: " https://lemontecito.fr ",
-    companyName: " Le Montecito ",
-    ownerName: " Simon Giraudet ",
-    email: " lemontecito1011@gmail.com ",
-    phone: " 09 86 50 12 07 ",
-    address: " 6 All. Duquesne, 44000, Nantes.",
-    hostName: " 1and1 ",
-    hostAddress: " Test des addresses 44300 Host",
-    hostPhone: " 01.02.03.04.05 ",
+    siteLink: " https://www.yannickperia.com ",
+    companyName: " Yannick Perianayagom-Mary",
+    ownerName: " Yannick Perianayagom-Mary ",
+    email: " yannickperia@gmail.com ",
+    phone: " 06 92 32 86 86",
+    address: " 	29 B RUE DE BORDEAUX 97420 LE PORT",
+    hostName: "Hostinger",
+    hostAddress: "143 Rue Emile Julien, 34070 Montpellier, France",
+    hostPhone: " 08 92 97 70 93 ",
   };
 
   return (

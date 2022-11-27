@@ -685,7 +685,7 @@ overflow: hidden;
 .socialMedia_container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: left;
 }
@@ -732,11 +732,18 @@ overflow: hidden;
   text-align: center;
 }
 
-.footer small {
+.footer .footer_bottom {
   text-align: center;
   width: 100%;
 }
 
+.mentions_obligatoires img{
+  height: 12vh;
+  width: auto;
+  margin: 2rem 0.5rem;
+  background-color: var(--main-bg-color);
+  border-radius: 0.25rem;
+}
 /********************************************************************* MENTIONS *********************************************************************/ 
 .mentions-container {
   padding: 1rem 4rem;
@@ -1117,8 +1124,8 @@ overflow: hidden;
   justify-content: space-between;
 }
 
-.footer_contact {
-  text-align: right;
+.footer > div {
+  width: 25vw;
 }
 
 .socialMedia_container img{
