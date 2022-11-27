@@ -1,6 +1,6 @@
 import React from "react";
 import pinceau from "../../../assets/pinceau4.png";
-import pinceau2 from "../../../assets/pinceau6.png";
+import pinceau2 from "../../../assets/pinceau7.png";
 
 function Landing({ title }) {
   return (
