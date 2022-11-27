@@ -11,7 +11,7 @@ function Contact({ helmet }) {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <main className="flex flex-col align-center">
+    <main className="flex flex-col align-center contact_page">
       <Helmet>
         <title> {helmet.title} | Contact </title>
         <link rel="canonical" href={`${helmet.href}/Services`} />
@@ -22,8 +22,8 @@ function Contact({ helmet }) {
         <section>
           <ul className="contact_coord_container">
             <h2>Mes coordonnées</h2>
-            <li>☎ Par téléphone : 06.92.32.86.86</li>
-            <li>📧 Par email : yannickperia@gmail.com</li>
+            <li>☎ 06.92.32.86.86</li>
+            <li>📧 yannickperia@gmail.com</li>
             <li>📍 Le Port, La Réunion</li>
           </ul>
         </section>

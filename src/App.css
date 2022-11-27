@@ -7,7 +7,7 @@
   --third-color : #FEEC04;
   --button-color: #0055FF;
   --grey: rgb(59, 56, 56);
-  --box-shadow: #e1e1e1 0px 1px 0px, #e1e1e1 0px 2px 4px, #e1e1e1 0px 2px 4px;
+  --box-shadow: #e1e1e1 0px 2px 0px, #e1e1e1 0px 2px 4px, #e1e1e1 0px 2px 4px;
   --font-title : 'Xanh Mono', monospace;
   --font-text :'Xanh Mono', monospace;
 }
@@ -471,38 +471,26 @@ margin: 2rem 0;
  text-align: left;
  margin: 1rem 0;
 }
-
-.left h3 {
-  text-align: left;
-  margin: 1rem 0 1rem;
-  color: var(--main-bg-color);
-  background-image: url(./assets/pinceau1.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: left center;
-  height: 3rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-}
-
 .right {
-  text-align: right;
+  text-align: left;
   margin: 1rem 0;
 }
 
-.right h3 {
-  text-align: right;
+.right h3, .left h3 {
+  text-align: left;
   margin: 1rem 0 1rem;
   color: var(--secondary-bg-color);
-  background-image: url(./assets/pinceau4.png);
+  background-image: url(./assets/pinceau8.png);
   background-repeat: no-repeat;
-  background-size: 110%;
-  background-position: right center;
-  height: 3rem;
+  background-size:120%;
+  background-position: left center;
+  height: 1.9rem;
+  font-size: 1.05rem;
+  width: auto;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-start;
+overflow: hidden;
 }
 /********************************************************************* Page Peintures *********************************************************************/ 
 
@@ -642,7 +630,7 @@ margin: 2rem 0;
 }
 
 .contact_coord_container * {
-  margin: 1rem 0 1rem 2rem;
+  margin: 1rem 0;
 }
 
 .socialMedia_container_contact h2 {
@@ -656,6 +644,8 @@ margin: 2rem 0;
   align-items: flex-start;
   text-align: left;
   width: 100%;
+  margin: 1rem 0;
+
 }
 
 .socialMedia_container_contact li a {
@@ -666,7 +656,7 @@ margin: 2rem 0;
 }
 
 .socialMedia_container_contact img {
-  height: 2.5rem;
+  height: 1.5rem;
   padding: 0 1rem 0 0;
 }
 
@@ -776,6 +766,11 @@ margin: 2rem 0;
     display: initial;
   }
 
+  h1 {
+    font-size: 4rem;
+    margin:0 0 5rem 0;
+  }
+
   h3 { 
     font-size: 2.5rem
   }
@@ -839,7 +834,7 @@ margin: 2rem 0;
 
 .about {
   min-height: 110vh;
-  padding: 2rem 20vw;
+  padding: 2rem 15vw;
 }
 
 .about .trace_bottom {
@@ -903,7 +898,7 @@ margin: 2rem 0;
 }
 .musiques {
   min-height: 160vh;
-  padding: 2rem 20vw;
+  padding: 2rem 15vw;
   overflow: hidden;
 }
 
@@ -933,7 +928,7 @@ margin: 2rem 0;
 }
 .oeuvres {
   min-height: 100vh;
-  padding: 2rem 20vw;
+  padding: 2rem 15vw;
 }
 .freedom {
   padding: 0 0 2rem;
@@ -954,7 +949,7 @@ border: #3b3a3a 0.25px solid;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 2rem 20vw;
+  padding: 2rem 15vw;
 }
 
 .bio_top {
@@ -995,63 +990,56 @@ margin: 0rem 2rem 0 0;
 }
 
 .left, .right {
-  width: 100%;
-  padding: 2rem 0;
+  width: 99.8%;
+  padding: 2rem;
+  margin: 3rem 0;
+  text-align: left;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 10px -30px, rgba(0, 0, 0, 0.3) 0px 15px 20px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ border-radius: 0.5rem;
 }
 
 .left *, .right * {
   background-color: transparent;
 }
 
-.left {
- text-align: left;
- margin: 1rem 0;
-}
-
-.left h3 {
-  text-align: left;
-  margin: 1rem 0 1rem;
-  color: var(--main-bg-color);
-  background-image: url(./assets/pinceau1.png);
+.left h3, .right h3 {
+  text-align: center;
+  margin: 0rem 0 5rem;
+  color: var(--secondary-bg-color);
+  background-image: url(./assets/pinceau9.png);
   background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: left center;
-  height: 4rem;
+  background-size:100%;
+  background-position: center;
+  height: fit-content;
+  font-size: 2rem;
+  width: auto;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+overflow: hidden;
 }
 
-.right {
-  text-align: right;
-  margin: 1rem 0;
+.bio_main h4 {
+  font-size: 1.2rem;
 }
 
-.right h3 {
-  text-align: right;
-  margin: 1rem 0 1rem;
-  color: var(--main-bg-color);
-  background-image: url(./assets/pinceau3.png);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: right center;
-  height: 6rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
+.bio_main {
+  width: 100%;
 }
-
 .bio_parcours {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 /********************************************************************* Page Peintures *********************************************************************/ 
 
 .page_peintures{
-  padding: 2rem 20vw;
+  padding: 2rem 15vw;
 }
 
 .peintures_img_container {
@@ -1095,16 +1083,54 @@ margin: 0rem 2rem 0 0;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 2rem 20vw;
+  padding: 2rem 15vw;
   position: relative;
 }
 /********************************************************************* Page Contact *********************************************************************/ 
+.contact_page {
+  padding: 2rem 15vw;
+
+}
+
 .contact_flex {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-around;
+  align-items: space-around;
+}
+.contact_flex h2 {
+  font-size: 1.5rem;
+}
+.contact_flex p {
+  font-size: 1.2rem;
 }
 
 .contact_flex section {
   margin: 1rem 1rem;
 }
+
+/********************************************************************* FOOTER *********************************************************************/ 
+
+.footer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer_contact {
+  text-align: right;
+}
+
+.socialMedia_container img{
+  margin-right: 0;
+}
+
+.footer h4 {
+  font-size: 1rem;
+}
+
+.footer_bottom {
+  width: 100%;
+}
+
 }
