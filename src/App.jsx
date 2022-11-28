@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
@@ -16,6 +17,9 @@ function App() {
     href: "https://yannickperia.com",
     description: "Change description",
   };
+
+  const [cookies, setCookies] = useState(true);
+
   return (
     <BrowserRouter>
       <Header helmet={helmet} />
@@ -27,6 +31,33 @@ function App() {
         <Route path="/Contact" element={<Contact helmet={helmet} />} />
         <Route path="/Mentions" element={<Mentions />} />
       </Routes>
+      {cookies && (
+        <section type="button" className="cookies">
+          <h4> Cookies 🍪</h4>
+          <p>
+            Ce site est à caractère informatif et ne collecte aucune donnée
+            personnelle.
+          </p>
+          <div className="flex justify-evenly">
+            <button
+              type="button"
+              className="button_style"
+              onClick={() => setCookies(false)}
+            >
+              D'accord
+            </button>
+            <Link to="/mentions">
+              <button
+                type="button"
+                className="button_style white"
+                onClick={() => setCookies(false)}
+              >
+                En savoir plus
+              </button>
+            </Link>
+          </div>
+        </section>
+      )}
       <Footer />
     </BrowserRouter>
   );
